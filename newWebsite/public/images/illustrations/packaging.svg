@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380">
+  <!-- ROSEALA original illustration: packaging set (hatbox, gift card, lily wax seal) -->
+  <defs>
+    <linearGradient id="box" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3C2134"/>
+      <stop offset="0.45" stop-color="#7A4A6C"/>
+      <stop offset="1" stop-color="#3C2134"/>
+    </linearGradient>
+    <radialGradient id="seal" r="0.6">
+      <stop offset="0" stop-color="#5A6E57"/>
+      <stop offset="1" stop-color="#36443A"/>
+    </radialGradient>
+    <g id="lily-mark" fill="none" stroke="#B39765" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 58 C20 46 21 36 20 25"/>
+      <path d="M20 46 C25 42 29 38 31 31 C25 33 22 38 20 46Z"/>
+      <path d="M20 25 C17 19 17 11 20 3 C23 11 23 19 20 25Z"/>
+      <path d="M20 25 C14 23 9 18 6 11 C5 8.5 6.5 7.5 8.5 9 C12 14 16 19 20 25Z"/>
+      <path d="M20 25 C26 23 31 18 34 11 C35 8.5 33.5 7.5 31.5 9 C28 14 24 19 20 25Z"/>
+      <path d="M20 23 L15.5 10 M20 23 L24.5 10 M20 23 L20 8"/>
+    </g>
+  </defs>
+
+  <!-- Cream tissue paper behind -->
+  <path d="M60 330 L120 60 L470 90 L480 340Z" fill="#F3EBDD" opacity="0.12"/>
+
+  <!-- Shadow -->
+  <ellipse cx="320" cy="322" rx="118" ry="16" fill="#000" opacity="0.2"/>
+
+  <!-- Hatbox body -->
+  <path d="M228 180 A92 22 0 0 0 412 180 L412 305 A92 22 0 0 1 228 305Z" fill="url(#box)"/>
+  <path d="M228 305 A92 22 0 0 0 412 305" fill="none" stroke="#B39765" stroke-width="1"/>
+  <text x="320" y="282" text-anchor="middle" font-family="'Cormorant Garamond', Garamond, Georgia, serif" font-size="20" letter-spacing="7" fill="#B39765">ROSEALA</text>
+
+  <!-- Lid -->
+  <path d="M222 168 A98 24 0 0 0 418 168 L418 194 A98 24 0 0 1 222 194Z" fill="url(#box)" stroke="#B39765" stroke-width="1"/>
+  <ellipse cx="320" cy="168" rx="98" ry="24" fill="#6E4362" stroke="#B39765" stroke-width="1.2"/>
+
+  <!-- Green ribbon over the box -->
+  <path d="M222 172 C260 186 380 186 418 172 L418 182 C380 196 260 196 222 182Z" fill="#465744" stroke="#B39765" stroke-width="0.8"/>
+  <!-- Bow on the lid -->
+  <path d="M320 164 C290 130 258 140 268 166 C276 184 306 176 320 164Z" fill="#465744" stroke="#B39765"/>
+  <path d="M320 164 C350 130 382 140 372 166 C364 184 334 176 320 164Z" fill="#465744" stroke="#B39765"/>
+  <path d="M316 168 L294 214 L305 208 L309 220 L322 170Z" fill="#3A4A3A" stroke="#B39765" stroke-width="0.8"/>
+  <path d="M324 168 L348 212 L337 207 L332 218 L318 170Z" fill="#3A4A3A" stroke="#B39765" stroke-width="0.8"/>
+  <circle cx="320" cy="165" r="7" fill="#3A4A3A" stroke="#B39765"/>
+
+  <!-- Gift card -->
+  <g transform="rotate(-8 120 200)">
+    <rect x="44" y="140" width="160" height="112" fill="#F3EBDD"/>
+    <rect x="52" y="148" width="144" height="96" fill="none" stroke="#B39765" stroke-width="0.8"/>
+    <text x="124" y="190" text-anchor="middle" font-family="'Cormorant Garamond', Garamond, Georgia, serif" font-size="16" letter-spacing="5" fill="#59334F">ROSEALA</text>
+    <path d="M100 200 L148 200" stroke="#B39765" stroke-width="0.8"/>
+    <text x="124" y="224" text-anchor="middle" font-family="'Cormorant Garamond', Garamond, Georgia, serif" font-style="italic" font-size="15" fill="#465744">with love</text>
+  </g>
+
+  <!-- Lily wax seal -->
+  <g transform="translate(150 300)">
+    <path d="M0 -38 C12 -40 22 -32 30 -26 C38 -18 40 -6 38 6 C40 18 32 28 22 34 C12 40 -2 40 -12 37 C-24 34 -34 26 -38 14 C-41 2 -38 -12 -30 -24 C-22 -34 -10 -37 0 -38Z" fill="url(#seal)"/>
+    <circle r="26" fill="none" stroke="#B39765" stroke-width="1"/>
+    <use href="#lily-mark" transform="translate(-12 -20) scale(0.62)"/>
+  </g>
+
+  <!-- Loose ribbon curl -->
+  <path d="M40 320 C80 300 110 340 150 350 C190 360 210 340 240 352" fill="none" stroke="#465744" stroke-width="7" stroke-linecap="round"/>
+  <path d="M40 320 C80 300 110 340 150 350 C190 360 210 340 240 352" fill="none" stroke="#B39765" stroke-width="0.8" stroke-dasharray="2 4"/>
+</svg>
