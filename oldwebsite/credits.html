@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Credits — ROSEALA</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-page="credits">
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <p class="eyebrow">Thank you</p>
+        <h1>Photo Credits</h1>
+        <p>Temporary product photos from Wikimedia Commons, used under the licences below. They will be replaced with ROSEALA's own photography.</p>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <ul class="credits-list" id="credits-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/components.js"></script>
+  <script>
+    // Built from the `photo` field of each product in js/products.js
+    document.getElementById("credits-list").innerHTML = ROSEALA.products
+      .map((p) => {
+        const c = p.photo;
+        const esc = ROSEALA.escapeHtml;
+        const license = c.licenseUrl ? `<a href="${esc(c.licenseUrl)}" rel="license noopener" target="_blank">${esc(c.license)}</a>` : esc(c.license);
+        return `<li>
+          <img src="${p.image}" alt="" loading="lazy">
+          <div><strong>${esc(p.name)}</strong><br>
+          Photo by ${esc(c.author)} · ${license} · <a href="${esc(c.source)}" target="_blank" rel="noopener">Source</a></div>
+        </li>`;
+      })
+      .join("");
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

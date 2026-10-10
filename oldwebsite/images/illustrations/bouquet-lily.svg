@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <!-- ROSEALA original illustration: Lily bouquet in cream paper with plum ribbon -->
+  <defs>
+    <linearGradient id="petal" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E4CFB8"/>
+      <stop offset="1" stop-color="#FFFBF4"/>
+    </linearGradient>
+    <g id="lily-petal">
+      <path d="M0 0 C-15 -16 -14 -46 0 -68 C14 -46 15 -16 0 0Z" fill="url(#petal)" stroke="#CDB59C" stroke-width="1"/>
+      <path d="M0 -6 C-1 -25 -1 -40 0 -58" stroke="#C7A88C" stroke-width="1.2" fill="none"/>
+      <circle cx="-4" cy="-18" r="1.5" fill="#8C5A72"/><circle cx="4" cy="-23" r="1.5" fill="#8C5A72"/>
+      <circle cx="-3" cy="-29" r="1.3" fill="#8C5A72"/><circle cx="3" cy="-13" r="1.3" fill="#8C5A72"/>
+    </g>
+    <g id="stamen">
+      <path d="M0 -4 L0 -36" stroke="#A89466" stroke-width="1.4"/>
+      <ellipse cy="-38" rx="2.4" ry="5" fill="#6B3B4F"/>
+    </g>
+    <g id="lily">
+      <use href="#lily-petal" transform="rotate(30) scale(0.94)"/>
+      <use href="#lily-petal" transform="rotate(150) scale(0.94)"/>
+      <use href="#lily-petal" transform="rotate(270) scale(0.94)"/>
+      <use href="#lily-petal" transform="rotate(90)"/>
+      <use href="#lily-petal" transform="rotate(210)"/>
+      <use href="#lily-petal" transform="rotate(330)"/>
+      <circle r="8" fill="#B9C29A"/>
+      <use href="#stamen"/><use href="#stamen" transform="rotate(60)"/><use href="#stamen" transform="rotate(120)"/>
+      <use href="#stamen" transform="rotate(180)"/><use href="#stamen" transform="rotate(240)"/><use href="#stamen" transform="rotate(300)"/>
+    </g>
+    <g id="bud">
+      <path d="M0 0 C-12 -6 -12 -26 0 -34 C12 -26 12 -6 0 0Z" fill="currentColor" stroke="#CDB59C"/>
+      <path d="M-10 -3 C-4 4 4 4 10 -3 L0 10Z" fill="#5E7259"/>
+      <path d="M0 8 L0 40" stroke="#5E7259" stroke-width="2"/>
+    </g>
+    <g id="leaf">
+      <path d="M0 0 C18 -22 18 -58 0 -84 C-18 -58 -18 -22 0 0Z" fill="currentColor"/>
+      <path d="M0 -4 L0 -76" stroke="#000" stroke-opacity="0.18" stroke-width="1.5"/>
+    </g>
+    <g id="sprig">
+      <path d="M0 0 C4 -40 0 -80 6 -120" stroke="#6F7058" stroke-width="2" fill="none"/>
+      <g fill="#A3A68A" stroke="#6F7058" stroke-width="0.8">
+        <circle cx="-8" cy="-18" r="9"/><circle cx="9" cy="-34" r="9"/><circle cx="-7" cy="-52" r="8"/>
+        <circle cx="10" cy="-68" r="8"/><circle cx="-5" cy="-86" r="7"/><circle cx="10" cy="-102" r="6"/><circle cx="6" cy="-121" r="5"/>
+      </g>
+    </g>
+  </defs>
+
+  <!-- Greenery -->
+  <use href="#leaf" color="#5E7259" transform="translate(200 300) rotate(-72) scale(1.4)"/>
+  <use href="#leaf" color="#7C8A6A" transform="translate(200 300) rotate(72) scale(1.4)"/>
+  <use href="#leaf" color="#7C8A6A" transform="translate(200 300) rotate(-42) scale(1.7)"/>
+  <use href="#leaf" color="#5E7259" transform="translate(200 300) rotate(44) scale(1.7)"/>
+  <use href="#leaf" color="#465744" transform="translate(200 300) rotate(-14) scale(1.9)"/>
+  <use href="#leaf" color="#5E7259" transform="translate(200 300) rotate(16) scale(1.9)"/>
+  <use href="#sprig" transform="translate(200 300) rotate(-30) scale(1.5)"/>
+  <use href="#sprig" transform="translate(200 300) rotate(34) scale(1.45)"/>
+
+  <!-- Back paper -->
+  <path d="M78 272 Q120 232 152 255 L200 480Z" fill="#E3D5BE" stroke="#CDB59C"/>
+  <path d="M322 272 Q280 232 248 255 L200 480Z" fill="#E3D5BE" stroke="#CDB59C"/>
+
+  <!-- Lilies -->
+  <use href="#bud" color="#F3EBDD" transform="translate(140 112) rotate(-25)"/>
+  <use href="#bud" color="#F3EBDD" transform="translate(262 100) rotate(20) scale(1.1)"/>
+  <use href="#bud" color="#F3EBDD" transform="translate(322 236) rotate(48)"/>
+  <use href="#lily" transform="translate(125 192) rotate(-20) scale(0.85)"/>
+  <use href="#lily" transform="translate(280 186) rotate(20) scale(0.9)"/>
+  <use href="#lily" transform="translate(200 150) rotate(5)"/>
+  <use href="#lily" transform="translate(162 252) rotate(35) scale(0.8)"/>
+  <use href="#lily" transform="translate(246 256) rotate(-10) scale(0.85)"/>
+
+  <!-- Front paper -->
+  <path d="M108 295 C150 316 250 316 292 295 L200 480Z" fill="#EFE5D4" stroke="#CDB59C" stroke-width="1.2"/>
+  <path d="M200 480 L168 310 M200 480 L234 310" stroke="#DCCDB4" stroke-width="1.6" fill="none"/>
+
+  <!-- Plum ribbon -->
+  <path d="M152 380 C185 390 215 390 248 380 L244 398 C214 408 186 408 156 398Z" fill="#59334F" stroke="#B39765"/>
+  <path d="M198 393 L180 452 L190 444 L195 456 L203 395Z" fill="#43263B" stroke="#B39765" stroke-width="0.8"/>
+  <path d="M202 393 L222 450 L212 443 L206 454 L197 395Z" fill="#43263B" stroke="#B39765" stroke-width="0.8"/>
+  <path d="M200 390 C172 364 146 374 156 395 C165 412 190 400 200 390Z" fill="#59334F" stroke="#B39765"/>
+  <path d="M200 390 C228 364 254 374 244 395 C235 412 210 400 200 390Z" fill="#59334F" stroke="#B39765"/>
+  <circle cx="200" cy="391" r="5.5" fill="#43263B" stroke="#B39765"/>
+</svg>

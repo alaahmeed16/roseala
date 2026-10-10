@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSEALA — Luxury Floral Atelier</title>
+  <meta name="description" content="ROSEALA is a luxury online flower boutique. Hand-tied bouquets, bespoke arrangements and elegant gift packaging.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-page="home">
+
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Luxury Floral Atelier</p>
+          <h1>Flowers, <em>softly</em> told.</h1>
+          <p class="hero-lead">
+            For the people you love, the moments you cherish, and the little
+            surprises that make an ordinary day feel special. Because flowers
+            don't need a reason. ♡
+          </p>
+          <div class="hero-buttons">
+            <a href="shop.html" class="btn btn-primary">Explore Our Flowers ♡</a>
+            <a href="#bespoke" class="btn btn-outline">Create Your Own Bouquet</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="arch arch-hero">
+            <img src="images/products/blush-peony-bouquet.jpg" alt="A lush bouquet of blush peonies in a glass vase">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED CATEGORIES (filled from js/products.js) ============ -->
+    <section class="section" id="collections">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Curated for you</p>
+          <h2>Shop by Flower</h2>
+        </div>
+        <div class="category-grid" id="category-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PRODUCTS (filled from js/products.js) ============ -->
+    <section class="section section-tint" id="featured">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Most loved</p>
+          <h2>Featured Bouquets</h2>
+        </div>
+        <div class="product-grid" id="featured-products"></div>
+        <div class="center">
+          <a href="shop.html" class="btn btn-outline">View All Flowers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CUSTOM BOUQUETS ============ -->
+    <section class="section" id="bespoke">
+      <div class="container bespoke-inner">
+        <div class="bespoke-visual reveal">
+          <div class="arch arch-large">
+            <img src="images/products/ranunculus-eucalyptus.jpg" alt="A loose arrangement of ranunculus and eucalyptus in a glass vase">
+          </div>
+        </div>
+
+        <div class="bespoke-text reveal">
+          <p class="eyebrow">The Bespoke Experience</p>
+          <h2>A bouquet made only for you</h2>
+          <p>
+            Work with our florists to create something truly personal. Choose
+            each flower, your colours, and the way it is wrapped. We will
+            arrange it by hand on the day it is delivered.
+          </p>
+
+          <ol class="steps">
+            <li>
+              <span class="step-num">01</span>
+              <div><h3>Choose your blooms</h3><p>Lilies, peonies, garden roses, ranunculus and seasonal greenery.</p></div>
+            </li>
+            <li>
+              <span class="step-num">02</span>
+              <div><h3>Select your palette</h3><p>Royal plum, ivory and cream, forest greens, or a mix of all three.</p></div>
+            </li>
+            <li>
+              <span class="step-num">03</span>
+              <div><h3>Wrap &amp; ribbon</h3><p>Cream or plum paper, velvet or silk ribbon, and a handwritten card.</p></div>
+            </li>
+          </ol>
+
+          <a href="shop.html" class="btn btn-primary">Browse Bouquets</a>
+          <p class="note">Our bespoke bouquet designer is coming soon. For now, every bouquet in the shop can be personalised with size, wrapping and ribbon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OCCASIONS & GIFTS (filled from js/products.js) ============ -->
+    <section class="section section-green" id="occasions">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Occasions &amp; Gifts</p>
+          <h2>Flowers for Every Feeling ♡</h2>
+          <p>For the big celebrations, the little moments, and all the love in between.</p>
+        </div>
+        <div class="occasion-grid" id="occasion-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ BRAND STORY & PACKAGING ============ -->
+    <section class="section" id="story">
+      <div class="container story-inner">
+        <div class="story-text reveal">
+          <p class="eyebrow">A Little Love Story ♡</p>
+          <h2>A Little Love, Wrapped in Flowers ♡</h2>
+          <p>
+            At ROSEALA, we believe flowers are more than a gift. They're a little
+            way of saying 'I'm thinking of you,' 'I'm proud of you,' or simply
+            'I love you.'
+          </p>
+          <p>
+            We believe the sweetest moments don't always need a special occasion.
+            Sometimes, the most beautiful flowers are the ones given for no reason at all.
+          </p>
+          <p>
+            Whether it's a bouquet for someone special, a little surprise for a
+            friend, or flowers just for yourself, we hope every ROSEALA bouquet
+            brings a little more love into someone's day.
+          </p>
+          <p>
+            Because life is made of little moments, and every one of them
+            deserves a little bloom. ♡
+          </p>
+          <p class="signature">With love, ROSEALA</p>
+        </div>
+
+        <div class="packaging reveal">
+          <h3>The ROSEALA Unboxing</h3>
+          <ul class="packaging-list">
+            <li><strong>Silk-finish paper</strong> in warm cream or royal plum</li>
+            <li><strong>Velvet ribbon</strong> in forest green, printed with ROSEALA in gold</li>
+            <li><strong>Lily wax seal</strong> on every wrapped bouquet</li>
+            <li><strong>Handwritten card</strong> on thick cream stock</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/pages/home.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

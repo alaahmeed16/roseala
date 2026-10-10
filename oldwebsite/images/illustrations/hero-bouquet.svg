@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 625">
+  <!-- ROSEALA original illustration: Signature Lily Bouquet -->
+  <defs>
+    <linearGradient id="petal" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#E4CFB8"/>
+      <stop offset="1" stop-color="#FFFBF4"/>
+    </linearGradient>
+    <radialGradient id="shade" r="0.5">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.25"/>
+      <stop offset="0.55" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.2"/>
+    </radialGradient>
+
+    <g id="lily-petal">
+      <path d="M0 0 C-15 -16 -14 -46 0 -68 C14 -46 15 -16 0 0Z" fill="url(#petal)" stroke="#CDB59C" stroke-width="1"/>
+      <path d="M0 -6 C-1 -25 -1 -40 0 -58" stroke="#C7A88C" stroke-width="1.2" fill="none"/>
+      <circle cx="-4" cy="-18" r="1.5" fill="#8C5A72"/><circle cx="4" cy="-23" r="1.5" fill="#8C5A72"/>
+      <circle cx="-3" cy="-29" r="1.3" fill="#8C5A72"/><circle cx="3" cy="-13" r="1.3" fill="#8C5A72"/>
+    </g>
+    <g id="stamen">
+      <path d="M0 -4 L0 -36" stroke="#A89466" stroke-width="1.4"/>
+      <ellipse cy="-38" rx="2.4" ry="5" fill="#6B3B4F"/>
+    </g>
+    <g id="lily">
+      <use href="#lily-petal" transform="rotate(30) scale(0.94)"/>
+      <use href="#lily-petal" transform="rotate(150) scale(0.94)"/>
+      <use href="#lily-petal" transform="rotate(270) scale(0.94)"/>
+      <use href="#lily-petal" transform="rotate(90)"/>
+      <use href="#lily-petal" transform="rotate(210)"/>
+      <use href="#lily-petal" transform="rotate(330)"/>
+      <circle r="8" fill="#B9C29A"/>
+      <use href="#stamen"/><use href="#stamen" transform="rotate(60)"/><use href="#stamen" transform="rotate(120)"/>
+      <use href="#stamen" transform="rotate(180)"/><use href="#stamen" transform="rotate(240)"/><use href="#stamen" transform="rotate(300)"/>
+    </g>
+
+    <g id="peony">
+      <g fill="currentColor" stroke="#000" stroke-opacity="0.16" stroke-width="1.5">
+        <ellipse cy="-30" rx="24" ry="20"/>
+        <ellipse cy="-30" rx="24" ry="20" transform="rotate(45)"/>
+        <ellipse cy="-30" rx="24" ry="20" transform="rotate(90)"/>
+        <ellipse cy="-30" rx="24" ry="20" transform="rotate(135)"/>
+        <ellipse cy="-30" rx="24" ry="20" transform="rotate(180)"/>
+        <ellipse cy="-30" rx="24" ry="20" transform="rotate(225)"/>
+        <ellipse cy="-30" rx="24" ry="20" transform="rotate(270)"/>
+        <ellipse cy="-30" rx="24" ry="20" transform="rotate(315)"/>
+        <circle r="30"/>
+        <ellipse cy="-16" rx="16" ry="13" transform="rotate(30)"/>
+        <ellipse cy="-16" rx="16" ry="13" transform="rotate(90)"/>
+        <ellipse cy="-16" rx="16" ry="13" transform="rotate(150)"/>
+        <ellipse cy="-16" rx="16" ry="13" transform="rotate(210)"/>
+        <ellipse cy="-16" rx="16" ry="13" transform="rotate(270)"/>
+        <ellipse cy="-16" rx="16" ry="13" transform="rotate(330)"/>
+        <circle r="11"/>
+      </g>
+      <circle r="52" fill="url(#shade)"/>
+      <path d="M-5 -2 C-5 -8 5 -8 5 -2 C5 4 -3 5 -3 0" fill="none" stroke="#000" stroke-opacity="0.22" stroke-width="1.4"/>
+    </g>
+
+    <g id="bud">
+      <path d="M0 0 C-12 -6 -12 -26 0 -34 C12 -26 12 -6 0 0Z" fill="currentColor"/>
+      <path d="M0 0 C-8 -10 -4 -24 4 -30" stroke="#000" stroke-opacity="0.2" fill="none" stroke-width="1.5"/>
+      <path d="M-10 -3 C-4 4 4 4 10 -3 L0 10Z" fill="#5E7259"/>
+      <path d="M0 8 L0 40" stroke="#5E7259" stroke-width="2"/>
+    </g>
+
+    <g id="leaf">
+      <path d="M0 0 C18 -22 18 -58 0 -84 C-18 -58 -18 -22 0 0Z" fill="currentColor"/>
+      <path d="M0 -4 L0 -76" stroke="#000" stroke-opacity="0.18" stroke-width="1.5"/>
+    </g>
+
+    <g id="sprig">
+      <path d="M0 0 C4 -40 0 -80 6 -120" stroke="#6F7058" stroke-width="2" fill="none"/>
+      <g fill="#A3A68A" stroke="#6F7058" stroke-width="0.8">
+        <circle cx="-8" cy="-18" r="9"/><circle cx="9" cy="-34" r="9"/><circle cx="-7" cy="-52" r="8"/>
+        <circle cx="10" cy="-68" r="8"/><circle cx="-5" cy="-86" r="7"/><circle cx="10" cy="-102" r="6"/><circle cx="6" cy="-121" r="5"/>
+      </g>
+    </g>
+  </defs>
+
+  <!-- Soft glow -->
+  <circle cx="250" cy="250" r="210" fill="#F3EBDD" opacity="0.06"/>
+
+  <!-- Greenery -->
+  <use href="#leaf" color="#7C8A6A" transform="translate(250 380) rotate(-80) scale(1.5)"/>
+  <use href="#leaf" color="#95997A" transform="translate(250 380) rotate(80) scale(1.5)"/>
+  <use href="#leaf" color="#95997A" transform="translate(250 380) rotate(-55) scale(1.9)"/>
+  <use href="#leaf" color="#7C8A6A" transform="translate(250 380) rotate(55) scale(1.9)"/>
+  <use href="#leaf" color="#7C8A6A" transform="translate(250 380) rotate(-22) scale(2.1)"/>
+  <use href="#leaf" color="#95997A" transform="translate(250 380) rotate(25) scale(2.1)"/>
+  <use href="#sprig" transform="translate(250 380) rotate(-38) scale(1.7)"/>
+  <use href="#sprig" transform="translate(250 380) rotate(42) scale(1.6)"/>
+  <use href="#sprig" transform="translate(250 380) rotate(-6) scale(2)"/>
+
+  <!-- Back wrapping paper (cream) -->
+  <path d="M100 335 Q150 290 190 318 L250 600Z" fill="#EADFCC" stroke="#D2C2A8"/>
+  <path d="M400 335 Q350 290 310 318 L250 600Z" fill="#EADFCC" stroke="#D2C2A8"/>
+
+  <!-- Flowers -->
+  <use href="#bud" color="#6E3F60" transform="translate(250 100) scale(1.1)"/>
+  <use href="#bud" color="#EADBC8" transform="translate(335 112) rotate(22)"/>
+  <use href="#bud" color="#6E3F60" transform="translate(392 185) rotate(38) scale(1.15)"/>
+  <use href="#bud" color="#EADBC8" transform="translate(110 280) rotate(-52) scale(1.1)"/>
+
+  <use href="#peony" color="#59334F" transform="translate(335 195)"/>
+  <use href="#lily" transform="translate(145 175) rotate(-25) scale(0.9)"/>
+  <use href="#peony" color="#6E3F60" transform="translate(185 260) scale(1.35)"/>
+  <use href="#lily" transform="translate(258 172) rotate(8) scale(1.15)"/>
+  <use href="#peony" color="#EADBC8" transform="translate(305 292) scale(1.2)"/>
+  <use href="#lily" transform="translate(378 290) rotate(15) scale(0.75)"/>
+  <use href="#lily" transform="translate(228 322) rotate(40) scale(0.85)"/>
+
+  <g fill="#B39765">
+    <circle cx="118" cy="226" r="4"/><circle cx="126" cy="218" r="3.5"/><circle cx="112" cy="214" r="3"/>
+    <circle cx="398" cy="248" r="4"/><circle cx="406" cy="238" r="3.5"/><circle cx="392" cy="236" r="3"/>
+    <circle cx="200" cy="120" r="3.5"/><circle cx="208" cy="112" r="3"/>
+  </g>
+
+  <!-- Front wrapping paper (plum) -->
+  <path d="M138 368 C190 394 310 394 362 368 L250 600Z" fill="#59334F" stroke="#B39765" stroke-width="1.2"/>
+  <path d="M250 600 L205 388 M250 600 L298 388" stroke="#6E4362" stroke-width="2" fill="none"/>
+
+  <!-- Ribbon and bow (forest green with gold edge) -->
+  <path d="M190 470 C230 482 270 482 310 470 L305 490 C268 502 232 502 195 490Z" fill="#465744" stroke="#B39765"/>
+  <path d="M247 488 L224 562 L237 553 L244 567 L253 490Z" fill="#3A4A3A" stroke="#B39765" stroke-width="0.8"/>
+  <path d="M253 488 L279 559 L266 552 L258 565 L247 490Z" fill="#3A4A3A" stroke="#B39765" stroke-width="0.8"/>
+  <path d="M250 484 C214 452 182 464 194 490 C205 512 236 496 250 484Z" fill="#465744" stroke="#B39765"/>
+  <path d="M250 484 C286 452 318 464 306 490 C295 512 264 496 250 484Z" fill="#465744" stroke="#B39765"/>
+  <circle cx="250" cy="485" r="7" fill="#3A4A3A" stroke="#B39765"/>
+</svg>
