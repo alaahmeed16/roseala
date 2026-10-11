@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { products } from "@/lib/products";
+import { photoCredits } from "@/lib/products";
 
 export const metadata: Metadata = {
   title: "Photo Credits",
 };
 
-// Built from the `photo` field of each product in lib/products.ts
+// Built from `photoCredits` in lib/products.ts
 export default function CreditsPage() {
   return (
     <>
@@ -24,10 +24,10 @@ export default function CreditsPage() {
       <section className="section section-tight">
         <div className="container">
           <ul className="credits-list" id="credits-list">
-            {products.map((p) => {
+            {photoCredits.map((p) => {
               const credit = p.photo;
               return (
-                <li key={p.id}>
+                <li key={p.image}>
                   <Image src={p.image} alt="" width={64} height={80} />
                   <div>
                     <strong>{p.name}</strong>

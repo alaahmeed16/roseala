@@ -1,0 +1,3 @@
+95a1f7243a69b3d11a64b7eede4e1cdd31a918d76d31c15daab9be2f68fa238c *backups/flower-refresh-2026-10-10/Header.tsx.bak
+d7f31695665d8a10c62dbcff55035081f4e3632fcbe5c03cf99345e48fb4eeee *backups/flower-refresh-2026-10-10/credits-page.tsx.bak
+3338d237f8355c13dedffea46eee424f619a1918e80b73155febd4ccacf0e248 *backups/flower-refresh-2026-10-10/products.ts.bak

@@ -6,7 +6,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useCart } from "@/lib/cart";
+import { formatPrice } from "@/lib/products";
 import { LilyMark } from "./LilyMark";
+
+// Was $150 on the old site; converted to BHD at 0.376 per USD.
+const FREE_DELIVERY_FROM = 56.4;
 
 // Which top-level page is current (the old <body data-page="...">).
 type ActivePage = "home" | "shop" | "cart" | null;
@@ -26,7 +30,7 @@ function SiteHeader({ active }: { active: ActivePage }) {
   return (
     <>
       <div className="announcement">
-        Complimentary hand delivery on orders over $150
+        Complimentary hand delivery on orders over {formatPrice(FREE_DELIVERY_FROM)}
         <span className="announce-extra"> &nbsp;·&nbsp; Every bouquet arrives gift-wrapped</span>
       </div>
       <header className="site-header">

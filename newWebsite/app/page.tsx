@@ -10,8 +10,6 @@ export const metadata: Metadata = {
     "ROSEALA is a luxury online flower boutique. Hand-tied bouquets, bespoke arrangements and elegant gift packaging.",
 };
 
-const NUMERALS = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
-
 export default function HomePage() {
   // Featured products (marked `featured: true` in lib/products.ts)
   const featured = products.filter((p) => p.featured).slice(0, 4);
@@ -40,8 +38,8 @@ export default function HomePage() {
           <div className="hero-visual reveal">
             <div className="arch arch-hero">
               <Image
-                src="/images/products/blush-peony-bouquet.jpg"
-                alt="A lush bouquet of blush peonies in a glass vase"
+                src="/images/products/hero-home-tulips.png"
+                alt="A bouquet of pink and cream tulips in a ROSEALA hat box"
                 fill
                 sizes="(max-width: 860px) 100vw, 460px"
                 loading="eager"
@@ -97,8 +95,8 @@ export default function HomePage() {
           <div className="bespoke-visual reveal">
             <div className="arch arch-large">
               <Image
-                src="/images/products/ranunculus-eucalyptus.jpg"
-                alt="A loose arrangement of ranunculus and eucalyptus in a glass vase"
+                src="/images/products/bespoke-bouquet.png"
+                alt="A bespoke hand-tied bouquet"
                 fill
                 sizes="(max-width: 860px) 100vw, 440px"
               />
@@ -147,9 +145,8 @@ export default function HomePage() {
             <p>For the big celebrations, the little moments, and all the love in between.</p>
           </div>
           <div className="occasion-grid" id="occasion-grid">
-            {occasions.map((o, i) => (
+            {occasions.map((o) => (
               <Link key={o.id} href={`/shop?occasion=${o.id}`} className="occasion-card reveal">
-                <span className="occasion-num">{NUMERALS[i] ?? ""}</span>
                 <h3>{o.name} ♡</h3>
                 <p>{o.blurb}</p>
               </Link>

@@ -338,6 +338,7 @@ p { margin: 0 0 1em; }
   font-size: 1.5rem;
   color: var(--forest);
   margin-top: 1.5rem;
+  text-align: left;
 }
 
 .packaging { background: var(--plum); color: var(--cream); padding: 3rem 2.5rem; position: relative; }
