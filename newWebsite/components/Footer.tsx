@@ -37,7 +37,6 @@ export function Footer() {
             <li><Link href="/#bespoke">Bespoke Bouquets</Link></li>
             <li><Link href="/#story">Our Story</Link></li>
             <li><Link href="/cart">Your Cart</Link></li>
-            <li><Link href="/credits">Photo Credits</Link></li>
           </ul>
         </div>
 
